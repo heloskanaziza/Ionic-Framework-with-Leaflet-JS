@@ -10,10 +10,8 @@
 }
 
 .custom-dropdown {
-  --background: #f4a460;
-  /* Warna kuning kecokelatan */
+  --background: #FFC300;
   --color: white;
-  /* Warna teks putih */
   --placeholder-color: white;
   --min-width: 200px;
   --padding-start: 8px;
@@ -25,7 +23,6 @@
 
 .custom-dropdown::part(text) {
   color: white;
-  /* Teks dropdown putih */
   font-weight: bold;
 }
 
@@ -34,16 +31,23 @@
   font-size: 13px;
 }
 
-.button-container {
+.refresh-container {
+  background-color: #11161a;
   padding: 10px;
   text-align: center;
 }
 
+/* Fix the map container height */
+.map-container {
+  height: calc(100% - 120px); /* Adjusted height for the map */
+}
+
+/* Styling for the ion-button */
 ion-button {
-  --background: #620000;
-  /* Warna tombol */
+  --background: #065379;
   --color: white;
-  /* Warna teks tombol */
   --border-radius: 10px;
   --box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-right: 20px;
 }
