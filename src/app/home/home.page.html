@@ -1,8 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Leaflet Map</ion-title>
+    <ion-title class="title">Concert Location</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content id="mapId" style="height: 100%; width: 100%" [fullscreen]="false">
+<ion-content>
+  <div class="dropdown-container">
+    <ion-select
+      [(ngModel)]="selectedLocation"
+      (ionChange)="onLocationSelect()"
+      class="custom-dropdown"
+    >
+      <ion-select-option
+        *ngFor="let location of locations"
+        [value]="location.label"
+      >
+        {{ location.label }}
+      </ion-select-option>
+    </ion-select>
+  </div>
+
+  <div id="mapId" style="height: calc(100% - 100px);"></div>
+
+  <!-- Tombol Refresh -->
+  <div class="refresh-container">
+    <ion-button expand="block" size="small" (click)="resetMap()">Refresh</ion-button>
+  </div>
 </ion-content>
