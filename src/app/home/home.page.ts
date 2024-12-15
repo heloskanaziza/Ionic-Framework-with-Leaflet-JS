@@ -43,12 +43,12 @@ export class HomePage {
     }),
   };
 
-  constructor(private navController: NavController) {}
+  constructor(private navController: NavController) { }
 
   ionViewDidEnter() {
     // Initialize the map
     this.map = L.map('mapId', { layers: [this.baseMaps['Street Map']] }).setView(
-      [-7.770939335714962, 110.37761533840921],      11
+      [-7.770939335714962, 110.37761533840921], 11
     );
 
     // Add layer control for base maps

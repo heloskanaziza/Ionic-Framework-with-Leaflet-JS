@@ -10,8 +10,10 @@
 }
 
 .custom-dropdown {
-  --background: #f4a460; /* Warna kuning kecokelatan */
-  --color: white; /* Warna teks putih */
+  --background: #f4a460;
+  /* Warna kuning kecokelatan */
+  --color: white;
+  /* Warna teks putih */
   --placeholder-color: white;
   --min-width: 200px;
   --padding-start: 8px;
@@ -22,7 +24,8 @@
 }
 
 .custom-dropdown::part(text) {
-  color: white; /* Teks dropdown putih */
+  color: white;
+  /* Teks dropdown putih */
   font-weight: bold;
 }
 
@@ -37,8 +40,10 @@
 }
 
 ion-button {
-  --background: #620000; /* Warna tombol */
-  --color: white; /* Warna teks tombol */
+  --background: #620000;
+  /* Warna tombol */
+  --color: white;
+  /* Warna teks tombol */
   --border-radius: 10px;
   --box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }

@@ -6,15 +6,8 @@
 
 <ion-content>
   <div class="dropdown-container">
-    <ion-select
-      [(ngModel)]="selectedLocation"
-      (ionChange)="onLocationSelect()"
-      class="custom-dropdown"
-    >
-      <ion-select-option
-        *ngFor="let location of locations"
-        [value]="location.label"
-      >
+    <ion-select [(ngModel)]="selectedLocation" (ionChange)="onLocationSelect()" class="custom-dropdown">
+      <ion-select-option *ngFor="let location of locations" [value]="location.label">
         {{ location.label }}
       </ion-select-option>
     </ion-select>
